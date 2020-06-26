@@ -19,7 +19,7 @@
 	        }
 
 	    }
-	    // different diagonal (absolute number)
+	    // difference diagonal (absolute number)
 	    return abs($ltr - $rtl);
 	}
 
