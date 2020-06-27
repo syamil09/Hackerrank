@@ -23,7 +23,7 @@
 	    return abs($ltr - $rtl);
 	}
 
-	$fptr = fopen(getenv("OUTPUT_PATH"), "w");
+	$fptr = fopen('php://stdin', "w");
 
 	$n = intval(trim(fgets(STDIN)));
 
@@ -37,7 +37,7 @@
 
 	$result = diagonalDifference($arr);
 
-	fwrite($fptr, $result . "\n");
+	print($result);
 
 	fclose($fptr);
  ?>
